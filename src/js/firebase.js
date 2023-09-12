@@ -2,13 +2,22 @@ import { initializeApp } from 'firebase/app'
 import { getFirestore } from 'firebase/firestore'
 import { getAuth } from 'firebase/auth'
 
+const { 
+  VITE_API_KEY,
+  VITE_AUTH_DOMAIN,
+  VITE_PROJECT_ID,
+  VITE_STORAGE_BUCKET,
+  VITE_MESSAGING_SENDER_ID,
+  VITE_APP_ID
+} = import.meta.env
+
 const firebaseConfig = {
-  apiKey: 'AIzaSyDzOhY4FBznWEM8tC4zm47cHkjaW6Nf4J4',
-  authDomain: 'noteballs-22869.firebaseapp.com',
-  projectId: 'noteballs-22869',
-  storageBucket: 'noteballs-22869.appspot.com',
-  messagingSenderId: '452955415779',
-  appId: '1:452955415779:web:9882a55e2a853f5ff051d6'
+  apiKey: VITE_API_KEY,
+  authDomain: VITE_AUTH_DOMAIN,
+  projectId: VITE_PROJECT_ID,
+  storageBucket: VITE_STORAGE_BUCKET,
+  messagingSenderId: VITE_MESSAGING_SENDER_ID,
+  appId: VITE_APP_ID
 }
 
 const app = initializeApp(firebaseConfig)
