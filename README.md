@@ -1,4 +1,4 @@
-# vue-composition-api-noteballs
+# Vue Composition API Digest
 
 This app should have a little bit of each functionality that Vue Composition API has to offer
 
